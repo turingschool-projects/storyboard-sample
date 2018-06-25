@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,113 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryBoardLesson" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="women-in-tech" translatesAutoresizingMaskIntoConstraints="NO" id="3qL-J6-mw6">
+                                <rect key="frame" x="134" y="88" width="500" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="GAJ-GZ-fxD"/>
+                                    <constraint firstAttribute="width" constant="500" id="VQH-UH-Ci5"/>
+                                    <constraint firstAttribute="height" constant="500" id="aBZ-V4-9wE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="uYb-t1-XoF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="dYb-O8-bOY">
+                                <rect key="frame" x="344" y="25" width="80" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="ie0-RG-34U"/>
+                                    <constraint firstAttribute="width" constant="80" id="kLQ-JG-bzD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="kP9-ux-rYH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leading By Example - Building Tomorrow's..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-ef-4LE">
+                                <rect key="frame" x="77" y="629" width="614" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="614" id="ddk-KB-lAu"/>
+                                    <constraint firstAttribute="width" constant="614" id="wfL-sg-alw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Women In Tech" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bK-dy-McB">
+                                <rect key="frame" x="304.5" y="676" width="159" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pG9-2e-r7D">
+                                <rect key="frame" x="77" y="764" width="614" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music-player-play" translatesAutoresizingMaskIntoConstraints="NO" id="FM0-gg-wiZ">
+                                <rect key="frame" x="128" y="859" width="512" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="IUq-YA-4EM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fast-forward" translatesAutoresizingMaskIntoConstraints="NO" id="0nf-je-YIu">
+                                <rect key="frame" x="468" y="859" width="240" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Buv-21-siD"/>
+                                    <constraint firstAttribute="height" constant="65" id="iF8-vJ-7dk"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-1z-O4s">
+                                <rect key="frame" x="77" y="764" width="614" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="610" id="6bG-wz-gXz"/>
+                                    <constraint firstAttribute="height" constant="30" id="H3Q-fo-ROH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="610" id="iLd-eC-bcn"/>
+                                </constraints>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rewind" translatesAutoresizingMaskIntoConstraints="NO" id="v2K-IT-Nbi">
+                                <rect key="frame" x="60" y="859" width="240" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Gyb-Fl-3Jd"/>
+                                    <constraint firstAttribute="width" constant="240" id="p63-hI-u96"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dYb-O8-bOY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ck-cZ-x8b"/>
+                            <constraint firstItem="W4D-1z-O4s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ls-5Q-nhS"/>
+                            <constraint firstItem="CYE-ef-4LE" firstAttribute="top" secondItem="3qL-J6-mw6" secondAttribute="bottom" constant="41" id="6qg-1N-lle"/>
+                            <constraint firstItem="3qL-J6-mw6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fS-ZK-BZv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v2K-IT-Nbi" secondAttribute="bottom" constant="100" id="CmC-zN-Jd1"/>
+                            <constraint firstItem="dYb-O8-bOY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D8A-CE-Sl5"/>
+                            <constraint firstItem="W4D-1z-O4s" firstAttribute="top" secondItem="9bK-dy-McB" secondAttribute="bottom" constant="59" id="GtI-BC-pFP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FM0-gg-wiZ" secondAttribute="bottom" constant="100" id="MSr-Z1-UOv"/>
+                            <constraint firstItem="9bK-dy-McB" firstAttribute="top" secondItem="CYE-ef-4LE" secondAttribute="bottom" constant="8" id="RYB-qZ-tco"/>
+                            <constraint firstItem="3qL-J6-mw6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rif-tw-Ixj"/>
+                            <constraint firstItem="dYb-O8-bOY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="a6z-Zl-TX7"/>
+                            <constraint firstItem="FM0-gg-wiZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ebw-TL-7Do"/>
+                            <constraint firstItem="3qL-J6-mw6" firstAttribute="top" secondItem="dYb-O8-bOY" secondAttribute="bottom" constant="24" id="hxg-p4-GEh"/>
+                            <constraint firstItem="dYb-O8-bOY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="jua-h6-Wjb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0nf-je-YIu" secondAttribute="trailing" constant="60" id="md9-XY-RmE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0nf-je-YIu" secondAttribute="bottom" constant="100" id="r8Q-0b-vci"/>
+                            <constraint firstItem="9bK-dy-McB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rDb-7z-dmJ"/>
+                            <constraint firstItem="v2K-IT-Nbi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="uEq-5y-7Dd"/>
+                            <constraint firstItem="CYE-ef-4LE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vp2-Af-Vdv"/>
+                            <constraint firstItem="3qL-J6-mw6" firstAttribute="leading" secondItem="dYb-O8-bOY" secondAttribute="trailing" constant="-290" id="wat-bc-OpE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.71875" y="132.421875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="down-arrow" width="512" height="512"/>
+        <image name="fast-forward" width="512" height="512"/>
+        <image name="music-player-play" width="512" height="512"/>
+        <image name="rewind" width="512" height="512"/>
+        <image name="women-in-tech" width="500" height="500"/>
+    </resources>
 </document>
